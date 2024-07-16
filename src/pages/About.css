@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+}
+
+.aboutHeader {
+width: 80%;
+  color: #ffffff;
+  margin: 14px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutContent {
+    width: 80%;
+    margin: 14px auto;
+    color: #ffffff;
+}
+
+.aboutText {
+    text-indent: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.aboutContact {
+    text-indent: 20px;
+    margin: 20px 0 10px 0;
+
+}
+
+.aboutImg {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+
+}

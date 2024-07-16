@@ -1,0 +1,81 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(101, 108, 133, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  width: 65vw;
+  max-width: 1100px;
+  height: 66%;
+  margin: auto;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #1a1a1a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.modalImg {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+.modalImg img {
+  width: 270px;
+  height: 400px;
+}
+
+
+
+.modalInfo {
+  width: 70%;
+  height: 100%;
+  margin-top: 4%;
+  padding: 0 10px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalInfo .modalTitle {
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.modalInfo .modalDesc {
+    font-size: 16px;
+    padding: 10px 0;
+
+}
+
+.gerne, .releaseDate, .rating {
+    font-size: 16px;
+    padding: 10px 0;
+    display: flex;
+    color: #cccccc
+}
+
+.releaseDate .date, .rating .ratingNum, .movieGenre {
+    margin-left: 5px;
+    color: #ffffff;
+}
+
+.closeBtn {
+    width: 16px;
+    height: 18px;
+    color:#ffffff;
+    display: flex;
+    justify-items: center;
+    cursor: pointer;
+    margin-top: 2%;
+}

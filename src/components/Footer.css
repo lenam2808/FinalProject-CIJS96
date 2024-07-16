@@ -1,0 +1,63 @@
+.footerContainer {
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(11 13 19);
+}
+
+.footerMain {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconList {
+    width: 70%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconList .socialMediaIcon {
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconList .blank {
+    width: 6%;
+}
+
+.iconList .bigIcon {
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bigIcon img:first-child {
+    width: 140px;
+}
+
+.bigIcon img {
+    width: 130px;
+}
+
+.footerText {
+    margin: 30px 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerText p {
+    margin: 6px 0;
+}
+
+.copyright {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
