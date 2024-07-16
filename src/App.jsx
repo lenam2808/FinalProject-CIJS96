@@ -29,11 +29,11 @@ function App() {
       <div className="container">
         <BrowserRouter>
           <Routes>
-            <Route index element={<Movie data={movieList} />} />
-            <Route path="/FinalProject-CIJS96/movies" element={<MovieDetails data={movieList} />} />
-            <Route path="/FinalProject-CIJS96/news" element={<News />} />
-            <Route path="/FinalProject-CIJS96/promotion" element={<Promotion />} />
-            <Route path="/FinalProject-CIJS96/about" element={<About />} />
+            <Route path="/" element={<Movie data={movieList} />} />
+            <Route path="/movies" element={<MovieDetails data={movieList} />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/promotion" element={<Promotion />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </BrowserRouter>
         <Footer />
