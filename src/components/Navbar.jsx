@@ -6,29 +6,29 @@ const Navbar = () => {
     <div className="navbarContainer">
       <div className="navbar">
         <div className="navbarBrand">
-          <Link to="/"><h1>ReactMovie</h1></Link>
+          <Link to="/FinalProject-CIJS96"><h1>ReactMovie</h1></Link>
         </div>
         <div className="navbarMain">
           <ul className="navbarList">
             <li className="navbarItem">
-              <Link to="/">Trang chủ</Link>
+              <Link to="/FinalProject-CIJS96">Trang chủ</Link>
             </li>
             <li className="navbarItem">
-              <Link to="/movies">Phim</Link>
+              <Link to="/FinalProject-CIJS96/movies">Phim</Link>
             </li>
             <li className="navbarItem">
-              <Link to="/news">Tin tức</Link>
+              <Link to="/FinalProject-CIJS96/news">Tin tức</Link>
             </li>
             <li className="navbarItem">
-              <Link to="/promotion">Khuyến mãi</Link>
+              <Link to="/FinalProject-CIJS96/promotion">Khuyến mãi</Link>
             </li>
             <li className="navbarItem">
-              <Link to="/about">Giới thiệu</Link>
+              <Link to="/FinalProject-CIJS96/about">Giới thiệu</Link>
             </li>
           </ul>
         </div>
         <div className="navbarRight">
-            <Link className="loginBtn" to="/login">Đăng nhập</Link>
+            <Link className="loginBtn" to="/FinalProject-CIJS96/login">Đăng nhập</Link>
         </div>
       </div>
     </div>
