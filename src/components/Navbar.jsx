@@ -28,7 +28,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbarRight">
-            <Link className="loginBtn" to="/FinalProject-CIJS96/login">Đăng nhập</Link>
+            <Link className="loginBtn" to="/login">Đăng nhập</Link>
         </div>
       </div>
     </div>
