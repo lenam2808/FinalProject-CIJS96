@@ -23,6 +23,32 @@
     outline: none;
 }
 
+.genreList {
+  width: 80%;
+  margin: 10px auto;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.genreList .genreItem {
+  height: 30px;
+  border: 1px solid rgb(55 65 81);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 5px;
+  margin: 4px 3px;
+  cursor: pointer;
+}
+
+.genreItem:hover {
+  background-color: #EA4444;
+}
+
 .header {
   width: 80%;
   margin: 10px auto;

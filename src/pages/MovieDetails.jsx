@@ -4,8 +4,90 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import "./MovieDetails.css";
 
+const genres = [
+  {
+    id: 28,
+    name: "Action",
+  },
+  {
+    id: 12,
+    name: "Adventure",
+  },
+  {
+    id: 16,
+    name: "Animation",
+  },
+  {
+    id: 35,
+    name: "Comedy",
+  },
+  {
+    id: 80,
+    name: "Crime",
+  },
+  {
+    id: 99,
+    name: "Documentary",
+  },
+  {
+    id: 18,
+    name: "Drama",
+  },
+  {
+    id: 10751,
+    name: "Family",
+  },
+  {
+    id: 14,
+    name: "Fantasy",
+  },
+  {
+    id: 36,
+    name: "History",
+  },
+  {
+    id: 27,
+    name: "Horror",
+  },
+  {
+    id: 10402,
+    name: "Music",
+  },
+  {
+    id: 9648,
+    name: "Mystery",
+  },
+  {
+    id: 10749,
+    name: "Romance",
+  },
+  {
+    id: 878,
+    name: "Science Fiction",
+  },
+  {
+    id: 10770,
+    name: "TV Movie",
+  },
+  {
+    id: 53,
+    name: "Thriller",
+  },
+  {
+    id: 10752,
+    name: "War",
+  },
+  {
+    id: 37,
+    name: "Western",
+  },
+];
+
 const MovieDetails = ({ data }) => {
+  const [filteredMovie, setFilteredMovie] = useState(data);
   const [movieSearch, setMovieSearch] = useState("");
+  const [genre, setGenre] = useState("");
+
   const filterMovie = data.filter((movie) => {
     if (
       movie.title.toLowerCase().includes(movieSearch.trim().toLocaleLowerCase())
@@ -13,8 +95,26 @@ const MovieDetails = ({ data }) => {
       return { movie };
     }
   });
+  const listGenre = [];
 
-  console.log(data);
+  // const filterGenre = data.filter((movie) => {
+  //   movie.genre_ids.map((genreId) => {
+  //     if (genreId === genre) {
+  //       listGenre.push(movie)
+  //       return [...listGenre];
+  //     }
+  //   })
+  // });
+
+  data.filter((movie, idx) => {
+    movie.genre_ids.map((genreId) => {
+      if (genreId === genre) {
+        listGenre.push(movie);
+      }
+    });
+  });
+
+
   return (
     <div className="container">
       <Navbar />
@@ -30,6 +130,20 @@ const MovieDetails = ({ data }) => {
             }}
           />
         </div>
+      </div>
+
+      <div className="genreList">
+        {genres.map((genre) => {
+          return (
+            <div
+              className="genreItem"
+              key={genre.id}
+              onClick={() => setGenre(genre.id)}
+            >
+              {genre.name}
+            </div>
+          );
+        })}
       </div>
 
       <div className="header">
@@ -50,7 +164,8 @@ const MovieDetails = ({ data }) => {
             </div>
           </div>
         </div> */}
-        {filterMovie.map((movie) => {
+        {
+          filterMovie.map((movie) => {
           return (
             <div className="movieItem" key={movie.id}>
               <div className="movieImage">
