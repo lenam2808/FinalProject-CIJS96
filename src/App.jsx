@@ -29,7 +29,7 @@ function App() {
       <div className="container">
         <BrowserRouter>
           <Routes>
-            <Route path="/FinalProject-CIJS96" element={<Movie data={movieList} />} />
+            <Route path="/" element={<Movie data={movieList} />} />
             <Route path="/movies" element={<MovieDetails data={movieList} />} />
             <Route path="/news" element={<News />} />
             <Route path="/promotion" element={<Promotion />} />
