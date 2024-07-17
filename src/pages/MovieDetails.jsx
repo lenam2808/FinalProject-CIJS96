@@ -84,7 +84,6 @@ const genres = [
 ];
 
 const MovieDetails = ({ data }) => {
-  const [filteredMovie, setFilteredMovie] = useState(data);
   const [movieSearch, setMovieSearch] = useState("");
   const [genre, setGenre] = useState("");
 
