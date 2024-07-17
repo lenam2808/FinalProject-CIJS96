@@ -44,6 +44,7 @@ const Carousel = () => {
           className="arrow arrowLeft"
           onClick={prevSlide}
         />
+        <div className="slider">
         {image.map((item, idx) => {
           return (
             <img
@@ -53,6 +54,7 @@ const Carousel = () => {
             />
           );
         })}
+        </div>
         <BsArrowRightCircleFill
           className="arrow arrowRight"
           onClick={nextSlide}

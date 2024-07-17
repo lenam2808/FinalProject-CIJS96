@@ -72,7 +72,7 @@ const News = () => {
           return (
             <div className="newsItem" key={idx}>
               <div className="newsImg">
-                <img src={item.img} />
+                <img src={item.img} className="zoom"/>
               </div>
               <div className="newsContent">
                 <div className="newsdate">{item.date}</div>

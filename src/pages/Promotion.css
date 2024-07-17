@@ -30,12 +30,24 @@
 .promoteImg {
   width: 100%;
   height: 65%;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.zoom {
+  transition: all 1s;
+}
+
+.promoteImg:hover .zoom {
+  transform: scale(1.1);
 }
 
 .promoteImg img {
   width: 100%;
   height: 100%;
   border-radius: 12px 12px 0 0;
+  object-fit: cover;
 }
 
 .promoteContent {

@@ -66,6 +66,11 @@
     align-items: center;
 }
 
+.userName {
+    color: #ffffff;
+    margin: 0 8px;
+}
+
 
 .loginBtn {
     width: 120px;

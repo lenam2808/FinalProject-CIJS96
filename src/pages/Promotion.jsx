@@ -47,7 +47,7 @@ const Promotion = () => {
           return (
             <div className="promoteItem" key={idx}>
               <div className="promoteImg">
-                <img src={item.img} />
+                <img src={item.img} className='zoom'/>
               </div>
               <div className="promoteContent">
                 <div className="promotedate">{item.date}</div>
