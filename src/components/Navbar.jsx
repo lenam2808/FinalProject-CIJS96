@@ -6,12 +6,12 @@ const Navbar = () => {
     <div className="navbarContainer">
       <div className="navbar">
         <div className="navbarBrand">
-          <Link to="/FinalProject-CIJS96"><h1>ReactMovie</h1></Link>
+          <Link to="/FinalProject-CIJS96/"><h1>ReactMovie</h1></Link>
         </div>
         <div className="navbarMain">
           <ul className="navbarList">
             <li className="navbarItem">
-              <Link to="/FinalProject-CIJS96">Trang chủ</Link>
+              <Link to="/FinalProject-CIJS96/">Trang chủ</Link>
             </li>
             <li className="navbarItem">
               <Link to="/FinalProject-CIJS96/movies">Phim</Link>
